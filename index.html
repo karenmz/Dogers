@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>|Dogers - La red social para vos y tu mascota</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	</head>
+	<body>
+    <section id="banner">
+			<div class="container">
+				<header id="header">
+				  <nav class="navbar navbar-default navbar-fixed-top menu">
+				    <div class="container">
+				      <div class="navbar-header">
+				        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				          <span class="sr-only">Toggle navigation</span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				        </button>
+				        <a style="padding:5px 15px" class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+				      </div>
+				      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				        <ul class="nav navbar-nav navbar-right main-menu">
+				            <li class="dropdown"><a href="newsfeed.html">Inicio</a></li>
+				            <li class="dropdown"><a href="profile.html">Mi perfil</a></li>
+				          	<li class="dropdown"><a href="preguntas-frecuentes.html">FAQ</a></li>
+				            <li class="dropdown"><a href="logout.html">Cerrar Sesión</a></li>
+				            <ul class="dropdown-menu page-list">
+				            </ul>
+				          </li>
+				        </ul>
+				        <form class="navbar-form navbar-right hidden-sm">
+				          <div class="form-group">
+				            <i class="icon ion-android-search"></i>
+				            <input type="text" class="form-control" placeholder="Buscar amigos, fotos, videos">
+				          </div>
+				        </form>
+				      </div><!-- /.navbar-collapse -->
+				    </div><!-- /.container -->
+				  </nav>
+				</header>
+
+        <!-- Formulario
+        ================================================= -->
+        <div class="sign-up-form">
+					<a href="index.html" class="logo"><img src="images/logo.png" alt="Dogers"/></a>
+					<h2 class="text-white" style="font-size:2em">¡Sé parte de la comunidad de mascotas más grande!</h2>
+					<div class="line-divider"></div>
+					<div class="form-wrapper">
+						<p class="signup-text">Registrate y conectate con Dogers de todo el mundo </p>
+						<form class="registro" action="index.php" method="post" enctype="multipart/form-data">
+							<fieldset class="form-group">
+								<label>Nombre completo:</label>
+								<input type="text" name="name" class="form-control" placeholder="Nombre" value="" required>
+									<div class="invalid-feedback">
+								</div>
+							</fieldset>
+              <fieldset class="form-group">
+								<label>Nombre de usuario:</label>
+                <input type="text" name='userName' class="form-control" legend="Nombre de usuario" placeholder="Usuario" value="" required>
+									<div class="invalid-feedback">
+								</div>
+							</fieldset>
+              <fieldset class="form-group">
+								<label for="avatar" >Cargar avatar:</label>
+                <input type="file" name="avatar" class="form-control-file" required>
+									<div class="invalid-feedback">
+								</div>
+							</fieldset>
+              <fieldset>
+                <label for="exampleFormControlSelect1">País de nacimiento:</label>
+                <select name="country" class="form-control form-extras"
+									<option value="">Elegí un país</option>
+										<option
+											value="Ar">"Argentina"</option>
+								</select>
+								<div class="invalid-feedback">
+								</div>
+              </fieldset>
+							<fieldset class="form-group">
+								<label>E-mail:</label>
+								<input type="email" name="email" class="form-control" placeholder="Email" class="form-control" value="" required>
+								<div class="invalid-feedback">
+								</div>
+							</fieldset>
+              <fieldset class="form-group">
+								<label>Contraseña:</label>
+                <input type="password" name="password" class="form-control" placeholder="Contraseña" name="password" required>
+								<small id="passwordHelpInline" class="text-muted" style="color:#FFFFFF">
+	 								Debe tener más de 5 caracteres, las letras DH.
+ 								</small>
+									<div class="invalid-feedback">
+								</div>
+							</fieldset>
+              <fieldset class="form-group">
+								<label>Repetir contraseña:</label>
+                <input type="password" name="rePassword" class="form-control form-control" placeholder="Repetir contraseña" required>
+									<div class="invalid-feedback">
+								</div>
+							</fieldset>
+							<p>Al registrarte, aceptás los términos y condiciones</p>
+						<input type="hidden" name="tipo" value="register">
+						<button class="btn-secondary" type="submit">Registrarme</button>
+						</form>
+					</div>
+					<a href="login.php">¿Ya tenés una cuenta?</a>
+					<img class="form-shadow" src="images/bottom-shadow.png" alt="" />
+				</div>
+
+				<!-- Formulario -->
+
+			</div>
+		</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<footer id="footer">
+		  <div class="container">
+		    <div class="row">
+		      <div class="footer-wrapper">
+		        <div class="col-md-7 col-sm-5">
+		          <a href="index.html"><img src="images/logo-black.png" alt="logo" class="footer-logo" /></a>
+		          <p>Dogers © 2019. Todos los derechos reservados</p>
+		          <br>
+		        </div>
+		        <div class="col-md-1 col-sm-1">
+		          <h6><a href="newsfeed.html">Inicio</a></h6>
+		        </div>
+		        <div class="col-md-1 col-sm-1">
+		          <h6><a href="profile.html">Perfil</a></h6>
+		        </div>
+		        <div class="col-md-1 col-sm-1">
+		          <h6><a href="preguntas-frecuentes.html">FAQ</a></h6>
+		        </div>
+		      </div>
+
+		  </div>
+
+		</footer>
+
+		<!--preloader-->
+		<div id="spinner-wrapper">
+		 <div class="spinner"></div>
+		</div>
+
+		<!-- Scripts
+		================================================= -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.sticky-kit.min.js"></script>
+		<script src="js/jquery.scrollbar.min.js"></script>
+		<script src="js/script.js"></script>
+		 </body>
+		</html>
+
+
+	</body>
+  </div>
+
+</html>

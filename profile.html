@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>| Dogers - La red social para vos y tu mascota</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	<body>
+ 				<header id="header">
+				  <nav class="navbar navbar-default navbar-fixed-top menu">
+				    <div class="container">
+
+				      <div class="navbar-header">
+				        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				          <span class="sr-only">Toggle navigation</span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				        </button>
+				        <a style="padding:5px 15px" class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+				      </div>
+
+				      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				        <ul class="nav navbar-nav navbar-right main-menu">
+				          <li class="dropdown"><a href="newsfeed.html">Inicio</a></li>
+				          <li class="dropdown"><a href="profile.html">Mi perfil</a></li>
+				          <li class="dropdown"><a href="preguntas-frecuentes.html">FAQ</a></li>
+				          <li class="dropdown"><a href="logout.html">Cerrar Sesión</a></li>
+				         		<ul class="dropdown-menu page-list"></ul>
+									</li>
+				        </ul>
+				        <form class="navbar-form navbar-right hidden-sm">
+				          <div class="form-group">
+				            <i class="icon ion-android-search"></i>
+				            <input type="text" class="form-control" placeholder="Buscar amigos, fotos, videos">
+				          </div>
+				        </form>
+				      </div><!-- /.navbar-collapse -->
+				    </div><!-- /.container -->
+				  </nav>
+				</header>
+				<div class="container">
+					<div class="timeline">
+		     	<div class="timeline-cover">
+					<!--Pantallas grandes-->
+       <div class="timeline-nav-bar hidden-sm hidden-xs">
+         <div class="row">
+           <div class="col-md-3">
+             <div class="profile-info">
+               <img src="data/avatars/" alt="imagen usuario" class="img-responsive profile-photo" />
+             </div>
+           </div>
+           <div class="col-md-3">
+             <ul class="list-inline">
+               <li><h3></h3>
+               <p class="text-muted"></p></li>
+             </ul>
+           </div>
+           <div class="col-md-6">
+             <ul class="list-inline profile-menu">
+               <li><a href="en-construccion.html">Biografía</a></li>
+               <li><a href="en-construccion.html">Información</a></li>
+               <li><a href="en-construccion.html">Fotos</a></li>
+               <li><a href="en-construccion.html">Amigos</a></li>
+							 <li><a href="edit-user.html">Editar perfil</a></li>
+
+             </ul>
+           </div>
+         </div>
+       </div><!--Pantallas grandes-->
+
+       <!--Pantallas chicas-->
+       <div class="navbar-mobile hidden-lg hidden-md">
+         <div class="profile-info">
+           <img src="data/avatars/" alt="imagen usuario" class="img-responsive profile-photo" />
+           <h4></h4>
+           <p class="text-muted">></p>
+         </div>
+         <div class="mobile-menu">
+           <ul class="list-inline">
+             <li><a href="timline.html" class="active">Biografía</a></li>
+             <li><a href="timeline-about.html">Información</a></li>
+             <li><a href="timeline-album.html">Fotos</a></li>
+             <li><a href="timeline-friends.html">Amigos</a></li>
+           </ul>
+         </div>
+       </div><!--Pantallas chicas-->
+
+     </div>
+     <div id="page-contents">
+       <div class="row">
+         <div class="col-md-12">
+
+           <!-- Crear post
+           ================================================= -->
+           <div class="create-post">
+             <div class="row">
+               <div class="col-md-12 col-sm-12">
+                 <div class="form-group">
+                   <textarea name="texts" id="exampleTextarea" cols="300" rows="2" class="form-control" placeholder="¿Qué estás pensando?"></textarea>
+                 </div>
+               </div>
+               <div class="col-md-12 col-sm-12">
+                 <div class="tools">
+                   <ul class="publishing-tools list-inline">
+                     <li><a href="#"><i class="ion-compose"></i></a></li>
+                     <li><a href="#"><i class="ion-images"></i></a></li>
+                     <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
+                     <li><a href="#"><i class="ion-map"></i></a></li>
+                   </ul>
+                   <button class="btn btn-primary pull-right">Publicar</button>
+                 </div>
+               </div>
+             </div>
+           </div><!-- Crear post fin-->
+
+      </div>
+       <div class="row">
+         <div class="col-md-3">
+         </div>
+         <div class="col-md-7">
+
+           <!-- Post Content
+           ================================================= -->
+           <div class="post-content">
+
+             <!--Fecha Post-->
+             <div class="post-date hidden-xs hidden-sm">
+               <h5></h5>
+               <p class="text-grey">Hace un momento</p>
+             </div><!--Post Fin-->
+
+               <iframe width="100%" height="315" src="https://www.youtube.com/embed/CvixRV5DfXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="post-container">
+               <img src="images/users/user-1.jpg" alt="user" class="profile-photo-md pull-left" />
+               <div class="post-detail">
+                 <div class="user-info">
+                   <h5><a href="timeline.html" class="profile-link">Lorena Astudillo</a> <span class="following">siguiendo</span></h5>
+                   <p class="text-muted">Publicó hace 15 minutos</p>
+                 </div>
+                 <div class="reaction">
+                   <a class="btn text-green"><i class="icon ion-thumbsup"></i> 13</a>
+                   <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="em em-anguished"></i> <i class="em em-anguished"></i> <i class="em em-anguished"></i></p>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-comment">
+                   <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">Diana </a><i class="em em-laughing"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                   <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">Juan</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                   <img src="data/avatars/" alt="imagen usuario" class="profile-photo-sm" />
+                   <input type="text" class="form-control" placeholder="Escribí tu comentario">
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- COntenido Post
+           ================================================= -->
+           <div class="post-content">
+
+             <!--Fecha post-->
+             <div class="post-date hidden-xs hidden-sm">
+               <h5></h5>
+               <p class="text-grey">10/22/2016</p>
+             </div><!--Fin fecha post-->
+
+             <img src="images/post-images/dogers1.png" alt="post-image" class="img-responsive post-image" />
+             <div class="post-container">
+               <img src="images/users/user-1.jpg" alt="user" class="profile-photo-md pull-left" />
+               <div class="post-detail">
+                 <div class="user-info">
+                   <h5><a href="timeline.html" class="profile-link">Sarah Cruz</a> <span class="following">Siguiendo</span></h5>
+                   <p class="text-muted">Ayer</p>
+                 </div>
+                 <div class="reaction">
+                   <a class="btn text-green"><i class="icon ion-thumbsup"></i> 49</a>
+                   <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="em em-anguished"></i> <i class="em em-anguished"></i> <i class="em em-anguished"></i></p>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-comment">
+                   <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">Diana </a><i class="em em-laughing"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                   <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">Juan</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                    <img src="data/avatars/" alt="imagen usuario" class="profile-photo-sm" />
+                   <input type="text" class="form-control" placeholder="Escribí tu comentario">
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- Contenido post
+           ================================================= -->
+           <div class="post-content">
+
+             <!--Fecha post-->
+             <div class="post-date hidden-xs hidden-sm">
+               <h5></h5>
+               <p class="text-grey">10/21/2016</p>
+             </div><!--Fecha post fin-->
+
+             <div class="post-container">
+               <img src="images/users/user-1.jpg" alt="user" class="profile-photo-md pull-left" />
+               <div class="post-detail">
+                 <div class="user-info">
+                   <h5><a href="timeline.html" class="profile-link">Sarah Cruiz</a> <span class="following">Siguiendo</span></h5>
+                   <p class="text-muted">Hace 2 días</p>
+                 </div>
+                 <div class="reaction">
+                   <a class="btn text-green"><i class="icon ion-thumbsup"></i> 49</a>
+                   <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="em em-anguished"></i> <i class="em em-anguished"></i> <i class="em em-anguished"></i></p>
+                 </div>
+                 <div class="line-divider"></div>
+                 <div class="post-comment">
+                   <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">Diana </a><i class="em em-laughing"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                   <img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />
+                   <p><a href="#" class="profile-link">John</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                 </div>
+                 <div class="post-comment">
+                   <img src="data/avatars/" alt="imagen usuario" class="profile-photo-sm" />
+                   <input type="text" class="form-control" placeholder="Escribí tu comentario">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-2 static">
+           <div id="sticky-sidebar">
+             <h4 class="grey">Tu actividad</h4>
+             <div class="feed-item">
+               <div class="live-activity">
+                 <p><a href="#" class="profile-link"></a> Comentaste una foto</p>
+                 <p class="text-muted">Hace 5 minutos</p>
+               </div>
+             </div>
+             <div class="feed-item">
+               <div class="live-activity">
+                 <p><a href="#" class="profile-link"></a> Publicaste una foto</p>
+                 <p class="text-muted">Hace una hora</p>
+               </div>
+             </div>
+             <div class="feed-item">
+               <div class="live-activity">
+                 <p><a href="#" class="profile-link"></a>Te gustó una publicación</p>
+                 <p class="text-muted">Hace 4 horas</p>
+               </div>
+             </div>
+             <div class="feed-item">
+               <div class="live-activity">
+                 <p><a href="#" class="profile-link"></a> Compartiste un álbum</p>
+                 <p class="text-muted">Hace un día</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <footer id="footer">
+   <div class="container">
+     <div class="row">
+       <div class="footer-wrapper">
+         <div class="col-md-7 col-sm-5">
+           <a href="index.html"><img src="images/logo-black.png" alt="logo" class="footer-logo" /></a>
+           <p>Dogers © 2019. Todos los derechos reservados</p>
+           <br>
+         </div>
+         <!-- <div class="col-md-1 col-sm-2">
+           <h6><a href="index.html">Registrarte</a></h6>
+         </div>
+         <div class="col-md-1 col-sm-2">
+           <h6><a href="login.html">Ingresar</a></h6>
+         </div> -->
+         <div class="col-md-1 col-sm-1">
+           <h6><a href="newsfeed.html">Inicio</a></h6>
+         </div>
+         <div class="col-md-1 col-sm-1">
+           <h6><a href="profile.html">Perfil</a></h6>
+         </div>
+         <div class="col-md-1 col-sm-1">
+           <h6><a href="preguntas-frecuentes.html">FAQ</a></h6>
+         </div>
+       </div>
+
+   </div>
+
+ </footer>
+
+ <!--preloader-->
+ <div id="spinner-wrapper">
+  <div class="spinner"></div>
+ </div>
+
+ <!-- Scripts
+ ================================================= -->
+ <script src="js/jquery-3.1.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery.sticky-kit.min.js"></script>
+ <script src="js/jquery.scrollbar.min.js"></script>
+ <script src="js/script.js"></script>
+  </body>
+ </html>
